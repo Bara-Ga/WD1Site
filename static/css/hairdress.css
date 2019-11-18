@@ -1,0 +1,73 @@
+body {font-family: 'Montserrat', sans-serif;}
+h2.center {text-align:center; margin:30px; 0;}
+.nav {display: inline-flex;}
+.nav-right-alignment {text-align:right;}
+.nav-link {color:#000000;}
+.nav-link.active {color:#fcaa00;}
+.nav-link:hover {color:#fcaa00;}
+.search-field {width:300px; height:30px;}
+.mobile-link {color:white;}
+
+.btn-outline-success {color: #fcaa00; border-color: #fcaa00;}
+.btn-outline-success:hover {color: #fff; background-color: #fcaa00; border-color: #fcaa00;}
+
+.angebote-dreier {text-align:center;}
+.angebote-dreier img {border:4px solid white;}
+.text-marker {background-color: #fcaa00; position: absolute; width: 100%; height: 77%; z-index: -1; left: 0px; bottom: -140px;}
+.table-spalte1 {width:30%;}
+.oeffnungszeiten {background-color:#efefef; padding:10px;}
+.text-feiertage {font-size:13px; display:block-inline; padding:20px 0; border-bottom: 1px solid #e1e1e1;}
+.zeiten td {padding:5px;}
+table.zeiten {width:90%;}
+.table-ende {border-bottom:1px solid #e1e1e1;}
+.table-header {padding:10px 0;}
+input.form {color:#666; margin:0px 10px 20px 0; width:70%;}
+textarea {width:70%;}
+select {margin: 0px 0 20px 0;}
+
+.rechteck {position:relative; height:100px;}
+.rechteck1 {}
+.rechteck2 {background-color:#fcaa00; width:30%; height:20px; position:absolute; top:20px; left:35%; z-index:-1;}
+
+.form-abstand-li {padding: 18px 0 0 20%;}
+.accordion {
+  background-color: #fcaa00;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.tab-akkordeon {color:#000;}
+.card-body {
+    padding: 1.25rem 4em;
+}
+.accordion > .card {
+    text-align: center;}
+
+.tab-akkordeon:hover {
+
+    color: #999;
+}
+.abstand-akko {margin:0 0 100px 0;}
+footer {background-color:#000;  padding:40px; width:100%;}
+footer img {margin:0 0 20px 0;}
+.footer-links a {color:white; font-size:14px; display:block; text-align:right; padding:10px 0 0;}
+.adresse-footer {color:white; font-size:14px;}
+.adresse-footer a {color:white;}
+.button-form {margin:20px 0 0 0;}
+#mobile {display:none;}
+
+@media (max-width:1200px){
+#mobile-menu {display:none;}
+#mobile {display: inline;}
+.slide-breakpoint {margin:20px 0 0;}
+
+}
+
+@media (max-width:650px){
+#mobile-search {display:none;}
+}
