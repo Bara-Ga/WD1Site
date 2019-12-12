@@ -1,0 +1,30 @@
+{% extends "frame.html" %} <!-- fügt meinen Rahmen ein-->
+{% block titel %}
+books edit
+{% endblock titel %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content%}
+<h1>Edit Books</h1>
+<p>Would you really like to edit the following books?</p>
+<p>{{book.titel}}</p>
+<!--FORM-->
+<form method="post">
+        <div class="form-group">
+        <label for="exampleInputEmail1">Buch Titel</label>
+        <input name="title" value="{{book.title}}" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">Book Titel</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputName1">Description</label>
+        <input name="description" value="{{book.bookdescription}}" type="text" class="form-control" id="exampleInputName1">
+    </div>
+
+    <button type="submit" class="btn btn-danger">Save</button>
+</form>
+<!-- END FORM-->
+
+
+{% endblock content%}

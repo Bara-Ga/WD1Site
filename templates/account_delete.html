@@ -1,0 +1,20 @@
+{% extends "frame.html" %} <!-- fügt meinen Rahmen ein-->
+{% block titel %}
+account delete
+{% endblock titel %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content%}
+<h1>Delete Account</h1>
+<p>Would you really like to delete the following account?</p>
+<p>{{account.username}}, {{account.email}}</p>
+<!--FORM-->
+<form method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+<!-- END FORM-->
+
+
+{% endblock content%}

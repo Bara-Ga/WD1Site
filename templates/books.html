@@ -1,0 +1,25 @@
+{% extends "frame.html" %} <!-- fügt meinen Rahmen ein-->
+{% block titel %}
+    Books
+{% endblock titel %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content%}
+    <h1>Super Books</h1>
+
+    <!-- CARD-->
+    {% for books in books %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{books.id}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{books.title}}</h6>
+            <p class="card-text">{{books.bookdescription}}</p>
+            <a href="/books/{{books.id}}/edit" class="card-link">Edit</a>
+            <a href="/books/{{books.id}}/delete" class="card-link">DELETE</a>
+        </div>
+    </div>
+    {% endfor %}
+    <!-- END CARD-->
+{% endblock content%}

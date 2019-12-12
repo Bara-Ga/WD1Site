@@ -1,0 +1,38 @@
+{% extends "frame.html" %} <!-- fügt meinen Rahmen ein-->
+{% block titel %}
+accouunts
+{% endblock titel %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content%}
+<h1>Account Overview</h1>
+<!-- TABLE-->
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for account in accounts %}
+    <tr>
+        <th scope="row">{{account.id}}</th>
+        <td>{{account.username}}</td>
+        <td>{{account.email}}</td>
+        <td><a href="/accounts/{{account.id}}/edit">edit</a></td>
+        <td><a><a href="/accounts/{{account.id}}/delete">delete</a></a></td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+<!-- TABELE END-->
+
+
+{% endblock content%}
